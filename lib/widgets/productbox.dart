@@ -40,7 +40,6 @@ class ProductBox extends StatelessWidget {
                       description,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontFamily: "Touk2"),
                     ),
                     Text(
                       "Price: \$$price",

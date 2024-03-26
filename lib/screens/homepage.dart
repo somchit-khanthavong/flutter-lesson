@@ -11,15 +11,13 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "ລາຍການສີນຄ້າ",
+          "Product List",
           style: TextStyle(
             color: Colors.blue,
             fontWeight: FontWeight.w900,
-            fontSize: 30.0,
-            fontFamily: "Touk2",
+            fontSize: 20.0,
           ),
         ),
-        centerTitle: true,
       ),
       body: ListView(
         shrinkWrap: true,
