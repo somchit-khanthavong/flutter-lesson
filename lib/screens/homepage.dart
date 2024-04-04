@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/models/product_model.dart';
+import 'package:myapp/screens/product_details.dart';
 import 'package:myapp/widgets/productbox.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -24,7 +25,19 @@ class MyHomePage extends StatelessWidget {
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return ProductBox(item: items[index]);
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return ProductDetailPage(item: items[index]);
+                  },
+                ),
+              );
+            },
+            child: ProductBox(item: items[index]),
+          );
         },
       ),
     );

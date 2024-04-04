@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/models/product_model.dart';
 import 'package:myapp/widgets/rating_box_scope.dart';
-import 'package:myapp/widgets/rating_box_widget.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 class ProductBox extends StatelessWidget {
   const ProductBox({super.key, required this.item});
-  // 1
   final Product item;
 
   @override
